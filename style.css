@@ -508,7 +508,7 @@ button:focus-visible {
    to match the skill-group / project-card look
 ─────────────────────────────────────────── */
 .certifications-section {
-  padding-bottom: 40px;
+  /* inherits standard --section-padding — no override needed */
 }
 
 .certifications-grid {
@@ -619,11 +619,13 @@ button:focus-visible {
 /* ── CONTACT SECTION ────────────────────────
 ─────────────────────────────────────────── */
 .contact-intro {
-  font-size: 1.05rem;
-  color: var(--color-text-muted);
-  max-width: 520px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-text);
+  max-width: 560px;
   margin-bottom: 48px;
   line-height: 1.8;
+  text-shadow: 0 0 40px rgba(168, 85, 247, 0.25);
 }
 
 /* Row of contact links */
@@ -753,9 +755,7 @@ button:focus-visible {
     padding: 72px 0;
   }
 
-  .certifications-section {
-    padding-bottom: 32px;
-  }
+  /* certifications section uses the same tablet padding as all other sections */
 
   /* Hide nav links and show hamburger button */
   .nav-links {
