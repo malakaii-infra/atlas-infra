@@ -1,38 +1,23 @@
-terraform/github.tf-12-  tags = {
-terraform/github.tf-13-    Name = "github-actions-oidc"
-terraform/github.tf-14-  }
-terraform/github.tf-15-}
-terraform/github.tf-16-
-terraform/github.tf:17:resource "aws_iam_role" "github_actions" {
-terraform/github.tf-18-  name = "atlas-github-actions"
-terraform/github.tf-19-
-terraform/github.tf-20-  assume_role_policy = jsonencode({
-terraform/github.tf-21-    Version = "2012-10-17"
-terraform/github.tf-22-
-terraform/github.tf-23-    Statement = [
-terraform/github.tf-24-      {
-terraform/github.tf-25-        Effect = "Allow"
-terraform/github.tf-26-
-terraform/github.tf-27-        Principal = {
-terraform/github.tf-28-          Federated = aws_iam_openid_connect_provider.github.arn
-terraform/github.tf-29-        }
-terraform/github.tf-30-
-terraform/github.tf-31-        Action = "sts:AssumeRoleWithWebIdentity"
-terraform/github.tf-32-
-terraform/github.tf-33-        Condition = {
-terraform/github.tf-34-          StringEquals = {
-terraform/github.tf-35-            "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
-terraform/github.tf-36-          }
-terraform/github.tf-37-
-terraform/github.tf-38-          StringLike = {
-terraform/github.tf-39-            "token.actions.githubusercontent.com:sub" = "repo:malakaii-infra/atlas-infra:ref:refs/heads/main"
-terraform/github.tf-40-          }
-terraform/github.tf-41-        }
-terraform/github.tf-42-      }
-terraform/github.tf-43-    ]
-terraform/github.tf-44-  })
-terraform/github.tf-45-
-terraform/github.tf-46-  tags = {
-terraform/github.tf-47-    Name = "atlas-github-actions"
-terraform/github.tf-48-  }
-terraform/github.tf-49-}
+{
+    "Arn": "arn:aws:iam::090204645115:role/atlas-github-actions",
+    "TrustPolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Principal": {
+                    "Federated": "arn:aws:iam::090204645115:oidc-provider/token.actions.githubusercontent.com"
+                },
+                "Action": "sts:AssumeRoleWithWebIdentity",
+                "Condition": {
+                    "StringEquals": {
+                        "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+                    },
+                    "StringLike": {
+                        "token.actions.githubusercontent.com:sub": "repo:malakaii-infra/atlas-infra:ref:refs/heads/main"
+                    }
+                }
+            }
+        ]
+    }
+}
