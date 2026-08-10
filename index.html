@@ -28,6 +28,7 @@
       <!-- Desktop nav links -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -54,23 +55,22 @@
       <div class="hero-content">
 
         <!-- Small label above name -->
-        <p class="hero-label">Hi, I'm</p>
+        <p class="hero-label">Hi, I'm Malakaii</p>
 
         <!-- Name with blinking cursor — the signature design element -->
-        <h1 class="hero-name">Malakaii<span class="cursor" aria-hidden="true">_</span></h1>
+        <h1 class="hero-name">AWS-certified DevOps / Cloud Engineer<span class="cursor" aria-hidden="true">_</span></h1>
 
         <!-- Title -->
-        <h2 class="hero-title">DevOps Engineer & AWS Solutions Architect</h2>
+        <h2 class="hero-title">Building reliable infrastructure in AWS</h2>
 
         <!-- Short intro paragraph -->
         <p class="hero-intro">
-          I’m an AWS-certified DevOps / cloud engineer with 3+ years of experience designing and automating mission-critical infrastructure.
+          I’m an AWS Certified Solutions Architect and DevOps / cloud engineer with 3+ years of experience designing and automating mission-critical infrastructure.
           I specialize in CI/CD modernization, Kubernetes, GitOps, and internal tooling solutions.
           <br>
           From redesigning pipelines and cutting deployment times by 70% to engineering DNS-based routing that drives CDN usage and eliminates origin bottlenecks
           - I enjoy building and maintaining reliable, scalable systems that make deployments faster and operations smoother.
           <br>
-          Developing and maintaining this site is my way to hone, apply and present my skills in cloud computing as I continue to grow as an engineer.
         </p>
 
         <!-- Call-to-action buttons -->
@@ -111,6 +111,7 @@
               <span class="skill-tag">Route 53</span>
               <span class="skill-tag">ELB</span>
               <span class="skill-tag">EKS</span>
+              <span class="skill-tag">ECS</span>
               <span class="skill-tag">Lambda</span>
               <span class="skill-tag">Glue</span>
               <span class="skill-tag">EMR</span>
@@ -149,8 +150,37 @@
     </section>
 
 
+    <!-- ── CERTIFICATIONS SECTION ────────────────
+         Credly badge embed(s)
+    ─────────────────────────────────────────── -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+
+        <div class="section-label">Credentials</div>
+        <h2 class="section-heading reveal">Certifications</h2>
+
+        <div class="certifications-grid reveal">
+
+          <!-- AWS Certified Solutions Architect — Credly badge -->
+          <div class="certification">
+            <div class="certification-badge">
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="e07b8514-9265-4698-84c5-3b304654bfba"
+                data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
     <!-- ── PROJECTS SECTION ──────────────────────
-         3 project cards with descriptions and links
+        Project cards with descriptions and links
     ─────────────────────────────────────────── -->
     <section class="section projects-section" id="projects">
       <div class="container">
@@ -159,55 +189,10 @@
         <h2 class="section-heading reveal">Projects</h2>
 
         <div class="projects-grid">
-
           <!-- Project 1 -->
           <article class="project-card reveal">
             <div class="project-card-inner">
-              <h3 class="project-title">Static Website Hosting on AWS S3</h3>
-              <p class="project-description">
-                Designed and deployed a production-style static website architecture using S3, CloudFront, Route53 and IAM.
-                Implemented least-privilege access, HTTPS delivery and CDN caching to improve performance and security.
-                The site you're viewing now runs on this setup.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">AWS S3</span>
-                <span class="tech-tag">CloudFront</span>
-                <span class="tech-tag">IAM</span>
-                <span class="tech-tag">DNS</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/malakaii-infra/static-site" class="btn btn-outline btn-sm">GitHub</a>
-                <a href="#" class="btn btn-ghost btn-sm">Live Demo</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="project-card reveal">
-            <div class="project-card-inner">
-              <h3 class="project-title">CI/CD Pipeline Demo</h3>
-              <p class="project-description">
-                Built an automated deployment pipeline using GitHub Actions.
-                On every push to main, code is tested and deployed to an
-                EC2 instance — no manual steps required.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">GitHub Actions</span>
-                <span class="tech-tag">EC2</span>
-                <span class="tech-tag">Bash</span>
-                <span class="tech-tag">CI/CD</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn btn-outline btn-sm">GitHub</a>
-                <a href="#" class="btn btn-ghost btn-sm">Live Demo</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="project-card reveal">
-            <div class="project-card-inner">
-              <h3 class="project-title">AWS Infrastructure Lab</h3>
+              <h3 class="project-title">Cloud infrastructure</h3>
               <p class="project-description">
                 Provisioned a complete VPC with public and private subnets,
                 EC2 instances, and an RDS database using Terraform.
@@ -301,6 +286,9 @@
     </div>
   </footer>
 
+
+  <!-- Credly badge embed loader (renders the certification badge iframe) -->
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
   <!-- Link to our JavaScript file — placed at bottom so HTML loads first -->
   <script src="script.js"></script>
