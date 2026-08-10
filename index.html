@@ -193,21 +193,22 @@
           <!-- Project 1 -->
           <article class="project-card reveal">
             <div class="project-card-inner">
-              <h3 class="project-title">Cloud infrastructure</h3>
+              <h3 class="project-title">Cloud Infrastructure Portfolio</h3>
               <p class="project-description">
-                Provisioned a complete VPC with public and private subnets,
-                EC2 instances, and an RDS database using Terraform.
-                All infrastructure defined as code and version controlled.
+                This site is containerized with Docker and deployed to AWS ECS Fargate through a GitHub Actions CI/CD pipeline.
+                Infrastructure is provisioned with Terraform, with Amazon ECR handling container images
+                and an Application Load Balancer routing traffic to the running service.
+                GitHub Actions authenticates to AWS through OIDC, allowing deployments without long-lived AWS credentials.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Terraform</span>
                 <span class="tech-tag">VPC</span>
-                <span class="tech-tag">EC2</span>
-                <span class="tech-tag">RDS</span>
+                <span class="tech-tag">ECS</span>
+                <span class="tech-tag">ALB</span>
+                <span class="tech-tag">GitHub Actions</span>
               </div>
               <div class="project-links">
                 <a href="#" class="btn btn-outline btn-sm">GitHub</a>
-                <a href="#" class="btn btn-ghost btn-sm">Live Demo</a>
               </div>
             </div>
           </article>
@@ -226,7 +227,6 @@
         <div class="section-label">Get In Touch</div>
         <h2 class="section-heading reveal">Let's Connect</h2>
         <p class="contact-intro reveal">
-          
           I'm open to mid-level and junior cloud / DevOps roles, internships, and project
           collaborations. Feel free to reach out — I'd love to chat.
         </p>
