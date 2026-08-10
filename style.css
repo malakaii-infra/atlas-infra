@@ -507,6 +507,10 @@ button:focus-visible {
    Credly badge embed(s), styled like a card
    to match the skill-group / project-card look
 ─────────────────────────────────────────── */
+.certifications-section {
+  padding-bottom: 40px;
+}
+
 .certifications-grid {
   display: flex;
   flex-wrap: wrap;
@@ -747,6 +751,10 @@ button:focus-visible {
   /* Reduce section padding on smaller screens */
   .section {
     padding: 72px 0;
+  }
+
+  .certifications-section {
+    padding-bottom: 32px;
   }
 
   /* Hide nav links and show hamburger button */
