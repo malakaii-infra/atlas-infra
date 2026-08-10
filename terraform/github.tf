@@ -36,7 +36,7 @@ resource "aws_iam_role" "github_actions" {
           }
 
           StringLike = {
-            "token.actions.githubusercontent.com:sub" = "repo:malakaii-infra/atlas-infra:ref:refs/heads/main"
+            "token.actions.githubusercontent.com:sub" = "repo:malakaii-infra@311223323/atlas-infra@1319572350:ref:refs/heads/main"
           }
         }
       }
