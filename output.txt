@@ -1,0 +1,144 @@
+{
+    "services": [
+        {
+            "serviceArn": "arn:aws:ecs:us-east-1:090204645115:service/atlas/atlas",
+            "serviceName": "atlas",
+            "clusterArn": "arn:aws:ecs:us-east-1:090204645115:cluster/atlas",
+            "loadBalancers": [
+                {
+                    "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:090204645115:targetgroup/atlas-tg/1a885386bdeace17",
+                    "containerName": "atlas",
+                    "containerPort": 80
+                }
+            ],
+            "serviceRegistries": [],
+            "status": "ACTIVE",
+            "desiredCount": 1,
+            "runningCount": 0,
+            "pendingCount": 1,
+            "launchType": "FARGATE",
+            "platformVersion": "LATEST",
+            "platformFamily": "Linux",
+            "taskDefinition": "arn:aws:ecs:us-east-1:090204645115:task-definition/atlas:1",
+            "deploymentConfiguration": {
+                "deploymentCircuitBreaker": {
+                    "enable": false,
+                    "rollback": false,
+                    "resetOnHealthyTask": true,
+                    "thresholdConfiguration": {
+                        "type": "BOUNDED_PERCENT",
+                        "value": 50
+                    }
+                },
+                "maximumPercent": 200,
+                "minimumHealthyPercent": 100,
+                "strategy": "ROLLING",
+                "bakeTimeInMinutes": 0
+            },
+            "deployments": [
+                {
+                    "id": "ecs-svc/7798210190847297324",
+                    "status": "PRIMARY",
+                    "taskDefinition": "arn:aws:ecs:us-east-1:090204645115:task-definition/atlas:1",
+                    "desiredCount": 1,
+                    "pendingCount": 1,
+                    "runningCount": 0,
+                    "failedTasks": 3,
+                    "createdAt": "2026-08-09T17:22:31.195000-04:00",
+                    "updatedAt": "2026-08-09T17:22:41.186000-04:00",
+                    "launchType": "FARGATE",
+                    "platformVersion": "1.4.0",
+                    "platformFamily": "Linux",
+                    "networkConfiguration": {
+                        "awsvpcConfiguration": {
+                            "subnets": [
+                                "subnet-0cb33143a0e283b87",
+                                "subnet-0992f39c19a7556b7"
+                            ],
+                            "securityGroups": [
+                                "sg-01c1ce5d3ccd781cd"
+                            ],
+                            "assignPublicIp": "DISABLED"
+                        }
+                    },
+                    "rolloutState": "IN_PROGRESS",
+                    "rolloutStateReason": "ECS deployment ecs-svc/7798210190847297324 in progress."
+                }
+            ],
+            "roleArn": "arn:aws:iam::090204645115:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+            "events": [
+                {
+                    "id": "f55af913-ef2c-492b-ba1b-2701ee38774f",
+                    "createdAt": "2026-08-09T17:28:57.294000-04:00",
+                    "message": "(service atlas) has started 1 tasks: (task 0c3faaa10425455ebb2616aad49c3d4d)."
+                },
+                {
+                    "id": "9ea74c0d-e1bf-4fd9-852f-107b5bcd0f82",
+                    "createdAt": "2026-08-09T17:28:26.555000-04:00",
+                    "message": "(service atlas) was unable to place a task. Reason: CannotPullContainerError: pull image manifest has been retried 7 time(s): image Manifest does not contain descriptor matching platform 'linux/amd64'."
+                },
+                {
+                    "id": "8f5a1a3b-bbb2-49fc-a455-14b94bb46214",
+                    "createdAt": "2026-08-09T17:27:02.224000-04:00",
+                    "message": "(service atlas) has started 1 tasks: (task 518d93dcb7f14cc3a77548a1f1e90706)."
+                },
+                {
+                    "id": "3be71da9-10b0-42ad-9759-f26204094e74",
+                    "createdAt": "2026-08-09T17:26:29.337000-04:00",
+                    "message": "(service atlas) was unable to place a task. Reason: CannotPullContainerError: pull image manifest has been retried 7 time(s): image Manifest does not contain descriptor matching platform 'linux/amd64'."
+                },
+                {
+                    "id": "d5b756fc-a3a0-462f-9e07-553db0cfbe1e",
+                    "createdAt": "2026-08-09T17:24:55.837000-04:00",
+                    "message": "(service atlas) has started 1 tasks: (task 57809ddf67d748768e7c585426daeb0c)."
+                },
+                {
+                    "id": "42f9dd3b-083d-43c7-8ded-68ef4c92d466",
+                    "createdAt": "2026-08-09T17:24:23.520000-04:00",
+                    "message": "(service atlas) was unable to place a task. Reason: CannotPullContainerError: pull image manifest has been retried 7 time(s): image Manifest does not contain descriptor matching platform 'linux/amd64'."
+                },
+                {
+                    "id": "e04aa988-a76a-4418-a8f8-99a048995d6b",
+                    "createdAt": "2026-08-09T17:22:41.856000-04:00",
+                    "message": "(service atlas) has started 1 tasks: (task c5e040f11cb04d54ba3395e53952b757)."
+                }
+            ],
+            "createdAt": "2026-08-09T17:22:31.195000-04:00",
+            "currentServiceDeployment": "arn:aws:ecs:us-east-1:090204645115:service-deployment/atlas/atlas/HJIoqHWcnXf5alsnqhWDW",
+            "currentServiceRevisions": [
+                {
+                    "arn": "arn:aws:ecs:us-east-1:090204645115:service-revision/atlas/atlas/7798210190847297324",
+                    "requestedTaskCount": 1,
+                    "runningTaskCount": 0,
+                    "pendingTaskCount": 1
+                }
+            ],
+            "placementConstraints": [],
+            "placementStrategy": [],
+            "networkConfiguration": {
+                "awsvpcConfiguration": {
+                    "subnets": [
+                        "subnet-0cb33143a0e283b87",
+                        "subnet-0992f39c19a7556b7"
+                    ],
+                    "securityGroups": [
+                        "sg-01c1ce5d3ccd781cd"
+                    ],
+                    "assignPublicIp": "DISABLED"
+                }
+            },
+            "healthCheckGracePeriodSeconds": 0,
+            "schedulingStrategy": "REPLICA",
+            "deploymentController": {
+                "type": "ECS"
+            },
+            "createdBy": "arn:aws:iam::090204645115:user/malakaii-admin",
+            "enableECSManagedTags": false,
+            "propagateTags": "NONE",
+            "enableExecuteCommand": false,
+            "availabilityZoneRebalancing": "ENABLED",
+            "resourceManagementType": "CUSTOMER"
+        }
+    ],
+    "failures": []
+}

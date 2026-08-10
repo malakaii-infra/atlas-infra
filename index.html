@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malakaii — DevOps / Cloud Engineer & AWS Solutions Architect</title>
+
+  <!-- Link to our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts: Plus Jakarta Sans for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" /></head>
+
+<body>
+
+  <!-- =============================================
+       NAVIGATION BAR
+       Fixed at top, collapses on mobile
+  ============================================== -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-container">
+
+      <!-- Logo / name in nav -->
+      <a href="#hero" class="nav-logo">Home</a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger button (hidden on desktop) -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+  ============================================== -->
+  <main>
+
+    <!-- ── HERO SECTION ─────────────────────────
+         Full-screen intro with name, title, and CTA buttons
+    ─────────────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+
+        <!-- Small label above name -->
+        <p class="hero-label">Hi, I'm</p>
+
+        <!-- Name with blinking cursor — the signature design element -->
+        <h1 class="hero-name">Malakaii<span class="cursor" aria-hidden="true">_</span></h1>
+
+        <!-- Title -->
+        <h2 class="hero-title">DevOps Engineer & AWS Solutions Architect</h2>
+
+        <!-- Short intro paragraph -->
+        <p class="hero-intro">
+          I’m an AWS-certified DevOps / cloud engineer with 3+ years of experience designing and automating mission-critical infrastructure.
+          I specialize in CI/CD modernization, Kubernetes, GitOps, and internal tooling solutions.
+          <br>
+          From redesigning pipelines and cutting deployment times by 70% to engineering DNS-based routing that drives CDN usage and eliminates origin bottlenecks
+          - I enjoy building and maintaining reliable, scalable systems that make deployments faster and operations smoother.
+          <br>
+          Developing and maintaining this site is my way to hone, apply and present my skills in cloud computing as I continue to grow as an engineer.
+        </p>
+
+        <!-- Call-to-action buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+        </div>
+
+      </div>
+
+      <!-- Subtle decorative background grid (CSS-only) -->
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- ── SKILLS SECTION ────────────────────────
+         Skills displayed as clean grouped tags
+    ─────────────────────────────────────────── -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-label">Toolkit</div>
+        <h2 class="section-heading reveal">Skills & Technologies</h2>
+
+        <!-- Skills grouped by category -->
+        <div class="skills-grid reveal">
+
+          <!-- Cloud group -->
+          <div class="skill-group">
+            <h3 class="skill-group-title">Cloud (AWS)</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">EC2</span>
+              <span class="skill-tag">VPC</span>
+              <span class="skill-tag">S3</span>
+              <span class="skill-tag">CloudFront</span>
+              <span class="skill-tag">IAM</span>
+              <span class="skill-tag">RDS</span>
+              <span class="skill-tag">Route 53</span>
+              <span class="skill-tag">ELB</span>
+              <span class="skill-tag">EKS</span>
+              <span class="skill-tag">Lambda</span>
+              <span class="skill-tag">Glue</span>
+              <span class="skill-tag">EMR</span>
+              <span class="skill-tag">Redshift</span>
+              <span class="skill-tag">DynamoDB</span>
+            </div>
+          </div>
+
+          <!-- DevOps group -->
+          <div class="skill-group">
+            <h3 class="skill-group-title">DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">GitOps</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Helm</span>
+              <span class="skill-tag">ArgoCD</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Windows Server</span>
+              <span class="skill-tag">DNS</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Bash</span>
+              <span class="skill-tag">Node.Js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Ansible</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Redis</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ── PROJECTS SECTION ──────────────────────
+         3 project cards with descriptions and links
+    ─────────────────────────────────────────── -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-label">Work</div>
+        <h2 class="section-heading reveal">Projects</h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <h3 class="project-title">Static Website Hosting on AWS S3</h3>
+              <p class="project-description">
+                Designed and deployed a production-style static website architecture using S3, CloudFront, Route53 and IAM.
+                Implemented least-privilege access, HTTPS delivery and CDN caching to improve performance and security.
+                The site you're viewing now runs on this setup.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">CloudFront</span>
+                <span class="tech-tag">IAM</span>
+                <span class="tech-tag">DNS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/malakaii-infra/static-site" class="btn btn-outline btn-sm">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <h3 class="project-title">CI/CD Pipeline Demo</h3>
+              <p class="project-description">
+                Built an automated deployment pipeline using GitHub Actions.
+                On every push to main, code is tested and deployed to an
+                EC2 instance — no manual steps required.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">EC2</span>
+                <span class="tech-tag">Bash</span>
+                <span class="tech-tag">CI/CD</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <h3 class="project-title">AWS Infrastructure Lab</h3>
+              <p class="project-description">
+                Provisioned a complete VPC with public and private subnets,
+                EC2 instances, and an RDS database using Terraform.
+                All infrastructure defined as code and version controlled.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">VPC</span>
+                <span class="tech-tag">EC2</span>
+                <span class="tech-tag">RDS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline btn-sm">GitHub</a>
+                <a href="#" class="btn btn-ghost btn-sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── CONTACT SECTION ───────────────────────
+         Simple call-to-action with contact links
+    ─────────────────────────────────────────── -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-heading reveal">Let's Connect</h2>
+        <p class="contact-intro reveal">
+          
+          I'm open to mid-level and junior cloud / DevOps roles, internships, and project
+          collaborations. Feel free to reach out — I'd love to chat.
+        </p>
+
+        <!-- Contact links as large buttons -->
+        <div class="contact-links reveal">
+
+          <a href="mailto:malachycschwartz@gmail.com" class="contact-item">
+            <!-- Simple inline SVG email icon -->
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="2,4 12,13 22,4"/>
+            </svg>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">malachycschwartz@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/malakaii-infra" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <div class="contact-item-text">
+              <span class="contact-item-label">GitHub</span>
+              <span class="contact-item-value">github.com/malakaii-infra</span>  
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/malachy-schwartz-960922357" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="4"/>
+              <line x1="8" y1="11" x2="8" y2="16"/>
+              <line x1="8" y1="8" x2="8" y2="8.5"/>
+              <path d="M12 16v-5m0 0c0-1.5 2-2 3-1s1 2.5 1 3v3"/>
+            </svg>
+            <div class="contact-item-text">
+              <span class="contact-item-label">LinkedIn</span>
+              <span class="contact-item-value">LinkedIn</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ── FOOTER ────────────────────────────────
+       Simple clean footer
+  ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Malakaii</span>
+      <span class="footer-copy">© <span id="footer-year"></span> — Built & deployed on AWS</span>
+    </div>
+  </footer>
+
+
+  <!-- Link to our JavaScript file — placed at bottom so HTML loads first -->
+  <script src="script.js"></script>
+
+</body>
+</html>
