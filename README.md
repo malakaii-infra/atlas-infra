@@ -23,12 +23,6 @@ Terraform provisions:
 - CloudWatch Logs
 - ACM certificate for HTTPS
 
-## Infrastructure as Code
-
-All AWS infrastructure is defined in Terraform and stored in version control.
-
-The project is structured so the AWS environment can be provisioned and updated through Terraform rather than manually configuring individual resources.
-
 ## CI/CD
 
 A push to `main` triggers the GitHub Actions deployment pipeline.
