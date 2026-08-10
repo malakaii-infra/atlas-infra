@@ -27,9 +27,9 @@
 
       <!-- Desktop nav links -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
@@ -83,6 +83,73 @@
 
       <!-- Subtle decorative background grid (CSS-only) -->
       <div class="hero-grid-bg" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- ── PROJECTS SECTION ──────────────────────
+        Project cards with descriptions and links
+    ─────────────────────────────────────────── -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-label">Work</div>
+        <h2 class="section-heading reveal">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <h3 class="project-title">Cloud Infrastructure Portfolio</h3>
+              <p class="project-description">
+                This site is containerized with Docker and deployed to AWS ECS Fargate through a GitHub Actions CI/CD pipeline.
+                Infrastructure is provisioned with Terraform, with Amazon ECR handling container images
+                and an Application Load Balancer routing traffic to the running service.
+                GitHub Actions authenticates to AWS through OIDC, allowing deployments without long-lived AWS credentials.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">VPC</span>
+                <span class="tech-tag">ECS</span>
+                <span class="tech-tag">ALB</span>
+                <span class="tech-tag">GitHub Actions</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/malakaii-infra/atlas-infra" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View on GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── CERTIFICATIONS SECTION ────────────────
+         Credly badge embed(s)
+    ─────────────────────────────────────────── -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+
+        <div class="section-label">Credentials</div>
+        <h2 class="section-heading reveal">Certifications</h2>
+
+        <div class="certifications-grid reveal">
+
+          <!-- AWS Certified Solutions Architect — Credly badge -->
+          <div class="certification">
+            <div class="certification-badge">
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="e07b8514-9265-4698-84c5-3b304654bfba"
+                data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
 
@@ -150,72 +217,6 @@
     </section>
 
 
-    <!-- ── CERTIFICATIONS SECTION ────────────────
-         Credly badge embed(s)
-    ─────────────────────────────────────────── -->
-    <section class="section certifications-section" id="certifications">
-      <div class="container">
-
-        <div class="section-label">Credentials</div>
-        <h2 class="section-heading reveal">Certifications</h2>
-
-        <div class="certifications-grid reveal">
-
-          <!-- AWS Certified Solutions Architect — Credly badge -->
-          <div class="certification">
-            <div class="certification-badge">
-              <div
-                data-iframe-width="150"
-                data-iframe-height="270"
-                data-share-badge-id="e07b8514-9265-4698-84c5-3b304654bfba"
-                data-share-badge-host="https://www.credly.com">
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ── PROJECTS SECTION ──────────────────────
-        Project cards with descriptions and links
-    ─────────────────────────────────────────── -->
-    <section class="section projects-section" id="projects">
-      <div class="container">
-
-        <div class="section-label">Work</div>
-        <h2 class="section-heading reveal">Projects</h2>
-
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card reveal">
-            <div class="project-card-inner">
-              <h3 class="project-title">Cloud Infrastructure Portfolio</h3>
-              <p class="project-description">
-                This site is containerized with Docker and deployed to AWS ECS Fargate through a GitHub Actions CI/CD pipeline.
-                Infrastructure is provisioned with Terraform, with Amazon ECR handling container images
-                and an Application Load Balancer routing traffic to the running service.
-                GitHub Actions authenticates to AWS through OIDC, allowing deployments without long-lived AWS credentials.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Terraform</span>
-                <span class="tech-tag">VPC</span>
-                <span class="tech-tag">ECS</span>
-                <span class="tech-tag">ALB</span>
-                <span class="tech-tag">GitHub Actions</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/malakaii-infra/atlas-infra" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View on GitHub →</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-    
     <!-- ── CONTACT SECTION ───────────────────────
          Simple call-to-action with contact links
     ─────────────────────────────────────────── -->
