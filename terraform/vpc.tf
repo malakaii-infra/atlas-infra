@@ -94,41 +94,17 @@ resource "aws_route_table_association" "public_b" {
 }
 
 # -------------------------
-# NAT Gateway
-# -------------------------
-
-resource "aws_eip" "nat" {
-  domain = "vpc"
-
-  tags = {
-    Name = "atlas-nat-eip"
-  }
-}
-
-resource "aws_nat_gateway" "atlas" {
-  allocation_id = aws_eip.nat.id
-  subnet_id     = aws_subnet.public_a.id
-
-  depends_on = [
-    aws_internet_gateway.atlas
-  ]
-
-  tags = {
-    Name = "atlas-nat"
-  }
-}
-
-# -------------------------
 # Private routing
 # -------------------------
 
+# No default route: private subnets have no internet egress.
+# AWS services are reached through VPC endpoints (endpoints.tf).
 resource "aws_route_table" "private" {
   vpc_id = aws_vpc.atlas.id
 
-  route {
-    cidr_block     = "0.0.0.0/0"
-    nat_gateway_id = aws_nat_gateway.atlas.id
-  }
+  # Explicitly empty: omitting route blocks would leave the old NAT
+  # route in place. The S3 endpoint route is managed by the endpoint.
+  route = []
 
   tags = {
     Name = "atlas-private"

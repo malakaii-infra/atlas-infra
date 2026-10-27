@@ -46,11 +46,19 @@ resource "aws_security_group" "ecs" {
   }
 
   egress {
-    description = "Outbound traffic through NAT"
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    description     = "HTTPS to interface endpoints (ECR, CloudWatch Logs)"
+    from_port       = 443
+    to_port         = 443
+    protocol        = "tcp"
+    security_groups = [aws_security_group.endpoints.id]
+  }
+
+  egress {
+    description     = "HTTPS to S3 via gateway endpoint (ECR image layers)"
+    from_port       = 443
+    to_port         = 443
+    protocol        = "tcp"
+    prefix_list_ids = [aws_vpc_endpoint.s3.prefix_list_id]
   }
 
   tags = {
